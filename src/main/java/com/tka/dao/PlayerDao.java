@@ -3,15 +3,18 @@ package com.tka.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.tka.model.Player;
 
-
+@Repository
 public class PlayerDao {
 
 List<Player> players = new ArrayList<Player>();
 	
 	public PlayerDao() {
-		
+		players.add(new Player(1,"Rohit sharma",33,"MI","Batsman"));
+		players.add(new Player(2,"Virat Kohali",32,"RCB","Batsman"));
 	}
 
 	public String addPlayer(Player player) {

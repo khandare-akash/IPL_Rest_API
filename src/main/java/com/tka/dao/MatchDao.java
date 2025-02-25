@@ -14,7 +14,8 @@ public class MatchDao {
 	List<Match> matchs = new ArrayList<Match>();
 	
 	public MatchDao() {
-		
+		matchs.add(new Match(1,"MI","RCB","15-Nov-2025","Mumbai","MI win by 10 wickets"));
+		matchs.add(new Match(2,"GG","RCB","16-Nov-2025","Gujrat","GG win by 4 wickets"));
 	}
 
 	public String addMatch(Match match) {
